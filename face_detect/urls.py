@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include("microservice_face_detect.urls"))
+    path('api/', include("microservice_face_detect.urls")),
+    path('sms/', include("microservice_sms.urls"))
 ]

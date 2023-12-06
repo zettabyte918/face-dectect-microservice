@@ -8,6 +8,7 @@ class FaceDetect(APIView):
 
     def is_Face(self, detector, image):
         faces = detector.detect_faces(image)
+        print(faces)
         return len(faces) > 0
 
     def post(self, request, format=None):
